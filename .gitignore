@@ -12,7 +12,7 @@
 
 # profiling files
 chrome-profiler-events*.json
-
+erpClient_workspace.code-workspace
 # IDEs and editors
 /.idea
 .project
