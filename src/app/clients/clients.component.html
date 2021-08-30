@@ -1,0 +1,87 @@
+<mat-toolbar>
+    <span>Primas Client Registration</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+    <mat-card-content>
+      <form class="my-form">
+ 
+             <mat-form-field class="full-width">
+                 <mat-label>Client Name</mat-label>
+                 <input  matInput  placeholder="Client Name"  name="clientName"  required>
+              </mat-form-field>
+ 
+              <mat-form-field class="full-width">
+                 <mat-label>Client Location</mat-label>
+                 <input  matInput  placeholder="Client Location"  name="clientLocation" required>
+              </mat-form-field>
+ 
+         <mat-form-field class="full-width">
+            <mat-label>Building Number</mat-label>
+            <input matInput placeholder="Building Number" name="buildingNumber" required />
+          </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Street Name</mat-label>
+        <input matInput placeholder="Street Name" name="streetName" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>City</mat-label>
+        <input matInput placeholder="City" name="city" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>State</mat-label>
+        <input matInput placeholder="State" name="state" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Pin Code</mat-label>
+        <input matInput placeholder="Pin Code" name="pinCode" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Country</mat-label>
+        <input matInput placeholder="Country" name="country" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Mobile Number</mat-label>
+        <input matInput placeholder="Mobile Number" name="mobileNumber" required />
+      </mat-form-field>
+
+      
+      <mat-form-field class="full-width">
+        <mat-label>Landline Number</mat-label>
+        <input matInput placeholder="Landline Number" name="landLineNumber" required />
+      </mat-form-field>
+      
+      <mat-form-field class="full-width">
+        <mat-label>Email Id</mat-label>
+        <input matInput placeholder="Email Id" name="emailId" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Client SPOC Name</mat-label>
+        <input matInput placeholder="Client SPOC Name" name="clientSpocName" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Client SPOC Mobile Number</mat-label>
+        <input matInput placeholder="Client SPOC Mobile Number" name="clientSpocMobileNumber" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Client SPOC Email Id</mat-label>
+        <input matInput placeholder="Client SPOC Email Id" name="clientSpocEmailId" required />
+      </mat-form-field>
+
+              <mat-card-actions>
+                <button mat-raised-button (click)="clientsRegistration()" color="primary">
+                  Client Registration
+                </button>
+              </mat-card-actions>
+          </form>
+       </mat-card-content>
+    </mat-card>
+ 

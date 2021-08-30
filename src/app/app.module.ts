@@ -10,13 +10,23 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import { AngularMaterialModule } from './angular-material.module'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DepartmentComponent } from './department/department.component';
+import { DesignationComponent } from './designation/designation.component';
+import { ClientsComponent } from './clients/clients.component';
+import { InvestorsComponent } from './investors/investors.component';
+import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
+import { InvoiceComponent } from './invoice/invoice.component';
  
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponentComponent,
     LoginComponentComponent,
-    DepartmentComponent,  
+    DepartmentComponent,
+    DesignationComponent,
+    ClientsComponent,
+    InvestorsComponent,
+    PurchaseOrderComponent,
+    InvoiceComponent,  
   ],
   imports: [
     BrowserModule,

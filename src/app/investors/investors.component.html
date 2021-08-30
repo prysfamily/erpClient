@@ -1,0 +1,72 @@
+<mat-toolbar>
+    <span>Primas Investors Registration</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+    <mat-card-content>
+      <form class="my-form">
+ 
+             <mat-form-field class="full-width">
+                 <mat-label>Investor Name</mat-label>
+                 <input  matInput  placeholder="Investor Name"  name="investorName"  required>
+              </mat-form-field>
+ 
+              <mat-form-field class="full-width">
+                 <mat-label>Investor Location</mat-label>
+                 <input  matInput  placeholder="Investor Location"  name="investorLocation" required>
+              </mat-form-field>
+ 
+         <mat-form-field class="full-width">
+            <mat-label>Building Number</mat-label>
+            <input matInput placeholder="Building Number" name="buildingNumber" required />
+          </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Street Name</mat-label>
+        <input matInput placeholder="Street Name" name="streetName" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>City</mat-label>
+        <input matInput placeholder="City" name="city" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>State</mat-label>
+        <input matInput placeholder="State" name="state" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Pin Code</mat-label>
+        <input matInput placeholder="Pin Code" name="pinCode" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Country</mat-label>
+        <input matInput placeholder="Country" name="country" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Mobile Number</mat-label>
+        <input matInput placeholder="Mobile Number" name="mobileNumber" required />
+      </mat-form-field>
+
+      
+      <mat-form-field class="full-width">
+        <mat-label>Landline Number</mat-label>
+        <input matInput placeholder="Landline Number" name="landLineNumber" required />
+      </mat-form-field>
+      
+      <mat-form-field class="full-width">
+        <mat-label>Email Id</mat-label>
+        <input matInput placeholder="Email Id" name="emailId" required />
+      </mat-form-field>
+
+              <mat-card-actions>
+                <button mat-raised-button (click)="investorsRegistration()" color="primary">
+                  Investor Registration
+                </button>
+              </mat-card-actions>
+          </form>
+       </mat-card-content>
+    </mat-card>
+ 

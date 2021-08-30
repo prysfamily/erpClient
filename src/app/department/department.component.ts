@@ -11,5 +11,5 @@ export class DepartmentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  departmentRegistration(): void{}
 }
