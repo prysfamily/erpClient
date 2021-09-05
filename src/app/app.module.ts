@@ -15,6 +15,7 @@ import { ClientsComponent } from './clients/clients.component';
 import { InvestorsComponent } from './investors/investors.component';
 import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
 import { InvoiceComponent } from './invoice/invoice.component';
+import { CountryComponent } from './country/country.component';
  
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InvoiceComponent } from './invoice/invoice.component';
     ClientsComponent,
     InvestorsComponent,
     PurchaseOrderComponent,
-    InvoiceComponent,  
+    InvoiceComponent,
+    CountryComponent,  
   ],
   imports: [
     BrowserModule,

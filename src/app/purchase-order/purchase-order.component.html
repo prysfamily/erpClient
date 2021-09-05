@@ -2,288 +2,304 @@
   <span>Primas Purchase Order</span>
 </mat-toolbar>
 <mat-card class="my-card">
-<div>
-  <mat-card-content class="matcnt">
-    <form class="my-form">
-      <mat-form-field class="full-width">
-        <mat-label>Purchase Order Number</mat-label>
-        <input
-          matInput
-          placeholder="Purchase Order Number"
-          name="purchaseOrderNumber"
-          required
-        />
-      </mat-form-field>
+  <div>
+    <mat-card-content class="matcnt">
+      <form class="my-form">
+        <mat-form-field class="full-width">
+          <mat-label>Purchase Order Number</mat-label>
+          <input
+            matInput
+            placeholder="Purchase Order Number"
+            name="purchaseOrderNumber"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field>
-        <mat-label>Purchase Order Date</mat-label>
-        <input
-          matInput
-          [matDatepicker]="picker"
-          placeholder="Purchase Order Date"
-        />
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
+        <mat-form-field>
+          <mat-label>Purchase Order Date</mat-label>
+          <input
+            matInput
+            [matDatepicker]="picker"
+            placeholder="Purchase Order Date"
+          />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>GST IN</mat-label>
-        <input matInput placeholder="GST IN" name="gstIn" required />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>GST IN</mat-label>
+          <input matInput placeholder="GST IN" name="gstIn" required />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Name</mat-label>
-        <input matInput placeholder="Name" name="name" required />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Name" name="name" required />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Address Line 1</mat-label>
-        <input
-          matInput
-          placeholder="Address Line 1"
-          name="addressLine1"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Address Line 1</mat-label>
+          <input
+            matInput
+            placeholder="Address Line 1"
+            name="addressLine1"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Address Line 2</mat-label>
-        <input
-          matInput
-          placeholder="Address Line 2"
-          name="addressLine2"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Address Line 2</mat-label>
+          <input
+            matInput
+            placeholder="Address Line 2"
+            name="addressLine2"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Address Line 3</mat-label>
-        <input
-          matInput
-          placeholder="Address Line 3"
-          name="addressLine3"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Address Line 3</mat-label>
+          <input
+            matInput
+            placeholder="Address Line 3"
+            name="addressLine3"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Address Line 4</mat-label>
-        <input
-          matInput
-          placeholder="Address Line 4"
-          name="addressLine4"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Address Line 4</mat-label>
+          <input
+            matInput
+            placeholder="Address Line 4"
+            name="addressLine4"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Address Line 5</mat-label>
-        <input
-          matInput
-          placeholder="Address Line 5"
-          name="addressLine5"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Address Line 5</mat-label>
+          <input
+            matInput
+            placeholder="Address Line 5"
+            name="addressLine5"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Address Line 6</mat-label>
-        <input
-          matInput
-          placeholder="Address Line 6"
-          name="addressLine6"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Address Line 6</mat-label>
+          <input
+            matInput
+            placeholder="Address Line 6"
+            name="addressLine6"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Attn. Name</mat-label>
-        <input matInput placeholder="Attn. Name" name="attnName" required />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Attn. Name</mat-label>
+          <input matInput placeholder="Attn. Name" name="attnName" required />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Quotation Number</mat-label>
-        <input
-          matInput
-          placeholder="Quotation Number"
-          name="quotationNumber"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Quotation Number</mat-label>
+          <input
+            matInput
+            placeholder="Quotation Number"
+            name="quotationNumber"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Quotation Date</mat-label>
-        <input
-          matInput
-          placeholder="Quotation Date"
-          name="quotationDate"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field>
+          <mat-label>Quotation Date</mat-label>
+          <input
+            matInput
+            [matDatepicker]="picker2"
+            placeholder="Quotation Date"
+          />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker2"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Body Message</mat-label>
-        <input
-          matInput
-          placeholder="Body Message"
-          name="bodyMessage"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Body Message</mat-label>
+          <input
+            matInput
+            placeholder="Body Message"
+            name="bodyMessage"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Terms & Condtition</mat-label>
-        <input
-          matInput
-          placeholder="Terms & Conditions"
-          name="termsAndCondition"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Terms & Condtition</mat-label>
+          <input
+            matInput
+            placeholder="Terms & Conditions"
+            name="termsAndCondition"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Payment Details</mat-label>
-        <input
-          matInput
-          placeholder="Payment Details"
-          name="paymentDetails"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Payment Details</mat-label>
+          <input
+            matInput
+            placeholder="Payment Details"
+            name="paymentDetails"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Shipping Name</mat-label>
-        <input
-          matInput
-          placeholder="Shiping Name"
-          name="shippingName"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Shipping Name</mat-label>
+          <input
+            matInput
+            placeholder="Shiping Name"
+            name="shippingName"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Shipping Address Line 1</mat-label>
-        <input
-          matInput
-          placeholder="Shipping Address Line 1"
-          name="shippingAddressLine1"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Shipping Address Line 1</mat-label>
+          <input
+            matInput
+            placeholder="Shipping Address Line 1"
+            name="shippingAddressLine1"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Shipping Address Line 2</mat-label>
-        <input
-          matInput
-          placeholder="Shipping Address Line 2"
-          name="shippingAddressLine2"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Shipping Address Line 2</mat-label>
+          <input
+            matInput
+            placeholder="Shipping Address Line 2"
+            name="shippingAddressLine2"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Shipping Address Line 3</mat-label>
-        <input
-          matInput
-          placeholder="Shipping Address Line 3"
-          name="shippingAddressLine3"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Shipping Address Line 3</mat-label>
+          <input
+            matInput
+            placeholder="Shipping Address Line 3"
+            name="shippingAddressLine3"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Shipping Address Line 4</mat-label>
-        <input
-          matInput
-          placeholder="Shipping Address Line 4"
-          name="shippingAddressLine4"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Shipping Address Line 4</mat-label>
+          <input
+            matInput
+            placeholder="Shipping Address Line 4"
+            name="shippingAddressLine4"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Shipping Address Line 5</mat-label>
-        <input
-          matInput
-          placeholder="Shipping Address Line 5"
-          name="shippingAddressLine5"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Shipping Address Line 5</mat-label>
+          <input
+            matInput
+            placeholder="Shipping Address Line 5"
+            name="shippingAddressLine5"
+            required
+          />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Shipping Address Line 6</mat-label>
-        <input
-          matInput
-          placeholder="Shipping Address Line 6"
-          name="shippingAddressLine6"
-          required
-        />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>Shipping Address Line 6</mat-label>
+          <input
+            matInput
+            placeholder="Shipping Address Line 6"
+            name="shippingAddressLine6"
+            required
+          />
+        </mat-form-field>
 
-      <!--Description-->
+        <!--Description-->
 
-      <mat-form-field class="full-width">
-        <mat-label>Description of Items</mat-label>
-        <input
-          matInput
-          placeholder="Description of Items"
-          name="descriptionOfItems"
-          required
-        />
-      </mat-form-field>
+        <form [formGroup]="purchaseOrderForm" class="purchaseOrderTable">
+          <table align="center">
+            <thead>
+              <th>S.No</th>
+              <th>Description of Items</th>
+              <th>Quantity</th>
+              <th>Unit Price</th>
+              <th>Total Cost INR</th>
+              <th>Remove</th>
+            </thead>
+            <tbody formArrayName="purchaseOrderRows">
+              <tr
+                *ngFor="let itemrow of purchaseOrderRows.controls; let i=index;let l=last"
+                [formGroupName]="i">
+                <td>{{ i + 1 }}</td>
+                <td>
+                  <input matInput placeholder="Description of Items" name="descriptionOfItems" formControlName="descriptionOfItems" required/>
+                </td>
+                <td>
+                  <input matInput type="number" placeholder="Quantity" name="quantity" formControlName="quantity" required />
+                </td>
+                <td>
+                  <input matInput type="number" placeholder="Unit Price" name="unitPrice" formControlName="unitPrice" required />
+                </td>
+                <td>
+                  <input matInput type="number" placeholder="Total Cost INR" name="totalCostINR" formControlName="totalCostINR" required />
+                </td>
+                <td>
+                  <mat-icon *ngIf="purchaseOrderRows.controls.length > 1" (click) = "deletePurchaseOrderRow(i)" class="delete-btn">delete_forever</mat-icon>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+        <div class="addPurchseOrderItem">
+        <button mat-mini-fab type="button" (click)="addPurchaseOrderRow()" class="btn btn-primary">
+          <mat-icon class="add-course-btn">add</mat-icon></button>
+      </div>
+        <mat-form-field class="full-width">
+          <mat-label>GST Percentage</mat-label>
+          <input
+            matInput
+            placeholder="GST Percentage"
+            name="gstPercentage"
+            required
+          />
+        </mat-form-field>
+        
 
-      <mat-form-field class="full-width">
-        <mat-label>Quantity</mat-label>
-        <input matInput placeholder="Quantity" name="quantity" required />
-      </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>GST Amount</mat-label>
+          <input matInput placeholder="GST Amount" name="gstAmount" required />
+        </mat-form-field>
 
-      <mat-form-field class="full-width">
-        <mat-label>Unit Price</mat-label>
-        <input matInput placeholder="Unit Price" name="unitPrice" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Total Cost INR</mat-label>
-        <input
-          matInput
-          placeholder="Total Cost INR"
-          name="totalCostINR"
-          required
-        />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>GST Percentage</mat-label>
-        <input
-          matInput
-          placeholder="GST Percentage"
-          name="gstPercentage"
-          required
-        />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>GST Amount</mat-label>
-        <input matInput placeholder="GST Amount" name="gstAmount" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Total Amount</mat-label>
-        <input
-          matInput
-          placeholder="Total Amount"
-          name="totalAmount"
-          required
-        />
-      </mat-form-field>
-
-      <mat-card-actions>
-        <button mat-raised-button (click)="purchaseOrder()" color="primary">
-          Purchase Order
-        </button>
-      </mat-card-actions>
-    </form>
-  </mat-card-content>
-</div>
+        <mat-form-field class="full-width">
+          <mat-label>Total Amount</mat-label>
+          <input
+            matInput
+            placeholder="Total Amount"
+            name="totalAmount"
+            required
+          />
+        </mat-form-field>
+        
+        <mat-card-actions class="purchaseOrderTable">
+          <button mat-raised-button (click)="purchaseOrder()" color="primary" >
+            Purchase Order
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+  </div>
 </mat-card>

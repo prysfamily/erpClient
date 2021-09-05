@@ -1,0 +1,32 @@
+<mat-toolbar>
+    <span>Primas Country Registration</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+    <mat-card-content>
+      <form class="my-form">
+ <!--Department Information-->
+             <mat-form-field class="full-width">
+                 <mat-label>Country Code</mat-label>
+                 <input  matInput  placeholder="Country Code"  name="countryCode"  required>
+              </mat-form-field>
+ 
+              <mat-form-field class="full-width">
+                 <mat-label>Country Description</mat-label>
+                 <input  matInput  placeholder="Country Description"  name="countryDescription" required>
+              </mat-form-field>
+ 
+
+              <mat-form-field class="full-width">
+                <mat-label>Nationality</mat-label>
+                <input  matInput  placeholder="Nationality"  name="nationality" required>
+             </mat-form-field>
+
+             <mat-card-actions>
+                <button mat-raised-button (click)="countryRegistration()" color="primary">
+                  Country Registration
+                </button>
+              </mat-card-actions>
+          </form>
+       </mat-card-content>
+    </mat-card>
+ 
