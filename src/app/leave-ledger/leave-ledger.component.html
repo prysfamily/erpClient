@@ -1,0 +1,31 @@
+<mat-toolbar>
+    <span>Primas Leave Ledger Registration</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+    <mat-card-content>
+      <form class="my-form">
+ <!--Department Information-->
+             <mat-form-field class="full-width">
+                 <mat-label>Employee Id - LOV</mat-label>
+                 <input  matInput  placeholder="Employee Id"  name="employeeId"  required>
+              </mat-form-field>
+ 
+              <mat-form-field class="full-width">
+                 <mat-label>Annual Leave</mat-label>
+                 <input  matInput  placeholder="Annual Leave"  name="annualLeave" required>
+              </mat-form-field>
+ 
+              <mat-form-field class="full-width">
+                <mat-label>Sick Leave</mat-label>
+                <input  matInput  placeholder="Sick Leave"  name="sickLeave" required>
+             </mat-form-field>
+
+              <mat-card-actions>
+                <button mat-raised-button (click)="leaveLedgerRegistration()" color="primary">
+                  Leave Ledger Registration
+                </button>
+              </mat-card-actions>
+          </form>
+       </mat-card-content>
+    </mat-card>
+ 

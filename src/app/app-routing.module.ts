@@ -8,6 +8,8 @@ import { ClientsComponent } from './clients/clients.component';
 import { InvestorsComponent } from './investors/investors.component';
 import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
 import { CountryComponent } from './country/country.component';
+import { LeaveLedgerComponent } from './leave-ledger/leave-ledger.component';
+import { AttendanceComponent } from './attendance/attendance.component';
 
 const routes: Routes = [ 
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -19,7 +21,8 @@ const routes: Routes = [
       { path: 'investors', component: InvestorsComponent },
       { path: 'purchaseOrder', component: PurchaseOrderComponent},
       { path: 'country', component: CountryComponent},
-
+      { path: 'leaveLedger', component: LeaveLedgerComponent},
+      { path: 'attendance', component: AttendanceComponent},
 ];
 
 @NgModule({
