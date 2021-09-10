@@ -23,7 +23,7 @@ export class CountryComponent implements OnInit {
   /* Reactive form */
   reactiveForm() {
     this.countryForm = this.fb.group({
-      countryCode: ['', [Validators.required, Validators.minLength, Validators.maxLength]],
+      countryCode: ['QA', [Validators.required, Validators.minLength, Validators.maxLength]],
       countryDescription: ['', [Validators.required, Validators.minLength, Validators.maxLength]],
       nationality: ['', [Validators.required,Validators.minLength, Validators.maxLength]],
       
