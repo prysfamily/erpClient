@@ -3,26 +3,35 @@
   </mat-toolbar>
   <mat-card class="my-card">
     <mat-card-content>
-      <form class="my-form">
+      <form class="country-form" [formGroup]="countryForm" (ngSubmit)="countryRegistration()" novalidate>
  <!--Department Information-->
-             <mat-form-field class="full-width">
+             <mat-form-field class="full-width" appearance="outline">
                  <mat-label>Country Code</mat-label>
-                 <input  matInput  placeholder="Country Code"  name="countryCode"  required>
-              </mat-form-field>
+                 <input  matInput  placeholder="Country Code"  name="countryCode"  required   minlength="2" maxlength="2"  formControlName="countryCode" pattern="[a-zA-Z ]*">
+                 <mat-error >
+                  {{errorMessage("countryCode","Only Country Codes")}}
+                </mat-error>
+                </mat-form-field>
  
-              <mat-form-field class="full-width">
+              <mat-form-field class="full-width" appearance="outline">
                  <mat-label>Country Description</mat-label>
-                 <input  matInput  placeholder="Country Description"  name="countryDescription" required>
-              </mat-form-field>
+                 <input  matInput  placeholder="Country Description"  name="countryDescription" required minlength="4" maxlength="25"  formControlName="countryDescription" pattern="[a-zA-Z ]*">
+                 <mat-error >
+                  {{errorMessage("countryDescription","Only Country Name")}}
+                </mat-error>
+                </mat-form-field>
  
 
-              <mat-form-field class="full-width">
+              <mat-form-field class="full-width" appearance="outline">
                 <mat-label>Nationality</mat-label>
-                <input  matInput  placeholder="Nationality"  name="nationality" required>
-             </mat-form-field>
+                <input  matInput  placeholder="Nationality"  name="nationality" required minlength="4" maxlength="25"  formControlName="nationality" pattern="[a-zA-Z ]*">
+                <mat-error >
+                  {{errorMessage("nationality","Only Nationality")}}
+                </mat-error>
+              </mat-form-field>
 
              <mat-card-actions>
-                <button mat-raised-button (click)="countryRegistration()" color="primary">
+                <button mat-raised-button  type="submit"  color="primary">
                   Country Registration
                 </button>
               </mat-card-actions>
