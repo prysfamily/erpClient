@@ -18,6 +18,7 @@ import { InvoiceComponent } from './invoice/invoice.component';
 import { CountryComponent } from './country/country.component';
 import { LeaveLedgerComponent } from './leave-ledger/leave-ledger.component';
 import { AttendanceComponent } from './attendance/attendance.component';
+import { ProfileComponent } from './profile/profile.component';
  
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AttendanceComponent } from './attendance/attendance.component';
     InvoiceComponent,
     CountryComponent,
     LeaveLedgerComponent,
-    AttendanceComponent,  
+    AttendanceComponent,
+    ProfileComponent,  
   ],
   imports: [
     BrowserModule,

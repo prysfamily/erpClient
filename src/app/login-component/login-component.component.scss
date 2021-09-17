@@ -6,9 +6,22 @@
   }
    
   .full-width {
-    width: 100%;
+    width: 60%;
   }
 
 .mat-radio-button ~ .mat-radio-button {
     margin-left: 16px;
 } 
+
+.loginTable{
+  width: 60%;
+  text-align: center;
+ 
+}
+
+
+.my-card{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -4,20 +4,23 @@
      <!-- <span><a mat-button style="color: azure;" href="/">Home</a></span> -->
      <span class="spacer"></span>
      
-    <a mat-button routerLink="/register">Register</a>
-     <a mat-button routerLink="/login">Login</a>
-     <a mat-button routerLink="/department">Department</a>
-     <a mat-button routerLink="/designation">Designation</a>
-     <a mat-button routerLink="/clients">Clients</a>
-     <a mat-button routerLink="/investors">Investors</a>
-     <a mat-button routerLink="/purchaseOrder">Purchase Order</a>
-     <a mat-button routerLink="/country">Country Maintenance</a>
-     <a mat-button routerLink="/leaveLedger">Leave Ledger</a>
-     <a mat-button routerLink="/attendance">Attendance</a>
+     <a *ngIf="loginStatus" mat-button routerLink="/register">Register</a>
+     <!-- <a *ngIf="loginStatus" mat-button routerLink="/login">Login</a> -->
+    
+     <a *ngIf="loginStatus"  mat-button routerLink="/department">Department</a>
+     
+     <a *ngIf="loginStatus" mat-button routerLink="/designation">Designation</a>
+     <a *ngIf="loginStatus" mat-button routerLink="/clients">Clients</a>
+     <a *ngIf="loginStatus" mat-button routerLink="/investors">Investors</a>
+     <a *ngIf="loginStatus" mat-button routerLink="/purchaseOrder">Purchase Order</a>
+     <a *ngIf="loginStatus" mat-button routerLink="/country">Country Maintenance</a>
+     <a *ngIf="loginStatus" mat-button routerLink="/leaveLedger">Leave Ledger</a>
+     <a *ngIf="loginStatus" mat-button routerLink="/attendance">Attendance</a>
+     <!-- <a *ngIf="loginStatus" mat-button routerLink="/profile">Profile</a> -->
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
-<table align="center">
+<!-- <table align="center">
   <tr>
     <td><img src="https://www.primasbioscience.com/wp-content/uploads/2020/05/header_logo.png"/></td>
   </tr>
@@ -26,4 +29,5 @@
     <td></td>
   </tr>
 </table>
-<p><marquee>Primas ERP application construction is in progress...</marquee></p>
+ -->
+ <p><marquee>Primas ERP application construction is in progress...</marquee></p>

@@ -23,7 +23,7 @@ export class CountryComponent implements OnInit {
   /* Reactive form */
   reactiveForm() {
     this.countryForm = this.fb.group({
-      countryCode: ['QA', [Validators.required, Validators.minLength, Validators.maxLength]],
+      countryCode: ['', [Validators.required, Validators.minLength, Validators.maxLength]],
       countryDescription: ['', [Validators.required, Validators.minLength, Validators.maxLength]],
       nationality: ['', [Validators.required,Validators.minLength, Validators.maxLength]],
       
@@ -33,7 +33,7 @@ export class CountryComponent implements OnInit {
   public  errorMessage(control: string, msg : string): string {
     const form: FormControl = (this.countryForm.controls[control] as FormControl);
     return form.hasError('required') ?
-      'Required error message' :
+      'This is mandatory' :
       form.hasError('maxlength') ?
       'Max length error' : 
       form.hasError('minlength') ?
