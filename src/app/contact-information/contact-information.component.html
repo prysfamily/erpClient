@@ -1,0 +1,62 @@
+<mat-toolbar>
+    <span>Primas Employee Contact Information</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+    
+    <mat-card-content>
+      
+      <form class="my-form">
+  
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Employee Id</mat-label>
+          <input matInput placeholder="Employee Id" name="employeeId" required />
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Employee Name</mat-label>
+          <input matInput placeholder="Employee Name" name="employeeName" required />
+        </mat-form-field>
+  
+        <mat-form-field class="full-width"  appearance="outline">
+          <mat-label>Building Number</mat-label>
+          <input
+            matInput
+            placeholder="Building Number"
+            name="buildingNumber"
+            required
+          />
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Street Name</mat-label>
+          <input matInput placeholder="Street Name" name="streetName" required />
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>City</mat-label>
+          <input matInput placeholder="City" name="city" required />
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>State</mat-label>
+          <input matInput placeholder="State" name="state" required />
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Pin Code</mat-label>
+          <input matInput placeholder="Pin Code" name="pinCode" required />
+        </mat-form-field>
+  
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Country</mat-label>
+          <input matInput placeholder="Country" name="country" required />
+        </mat-form-field>
+        <mat-card-actions  class="contactTable">
+          <button mat-raised-button (click)="emergencyContactInformation()" color="primary">
+            Emergency Contact Information
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  

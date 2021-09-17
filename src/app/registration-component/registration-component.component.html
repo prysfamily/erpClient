@@ -5,6 +5,12 @@
   <div>
   <mat-card-content  class="matcnt">
     <form class="my-form">
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Employee Id</mat-label>
+        <input matInput placeholder="Employee Id" name="employeeId" required />
+      </mat-form-field>
+
       <mat-form-field class="full-width" appearance="outline">
         <mat-label>First Name</mat-label>
         <input matInput placeholder="First Name" name="firstName" required />
@@ -131,132 +137,19 @@
           required
         />
       </mat-form-field>
+      
 
-      <!--Contact Information-->
-      <!-- <mat-form-field class="full-width">
-        <mat-label>Building Number</mat-label>
-        <input
-          matInput
-          placeholder="Building Number"
-          name="buildingNumber"
-          required
-        />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Street Name</mat-label>
-        <input matInput placeholder="Street Name" name="streetName" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>City</mat-label>
-        <input matInput placeholder="City" name="city" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>State</mat-label>
-        <input matInput placeholder="State" name="state" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Pin Code</mat-label>
-        <input matInput placeholder="Pin Code" name="pinCode" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Country</mat-label>
-        <input matInput placeholder="Country" name="country" required />
-      </mat-form-field> -->
-
-      <!--Emgerency Contact Information-->
-      <!-- <mat-form-field class="full-width">
-        <mat-label>Building Number</mat-label>
-        <input
-          matInput
-          placeholder="Building Number"
-          name="eBuildingNumber"
-          required
-        />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Street Name</mat-label>
-        <input matInput placeholder="Street Name" name="eStreetName" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>City</mat-label>
-        <input matInput placeholder="City" name="eCity" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>State</mat-label>
-        <input matInput placeholder="State" name="eState" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Pin Code</mat-label>
-        <input matInput placeholder="Pin Code" name="ePinCode" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Country</mat-label>
-        <input matInput placeholder="Country" name="eCountry" required />
-      </mat-form-field> -->
-
-      <!--Professional Information-->
-      <!-- <mat-form-field class="full-width">
-        <mat-label>Years of Experience</mat-label>
-        <input
-          matInput
-          placeholder="Years of Experience"
-          name="yearsOfExperience"
-          required
-        />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Experience in Months</mat-label>
-        <input
-          matInput
-          placeholder="experienceInMonths"
-          name="experienceInMonths"
-          required
-        />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Previous Employer</mat-label>
-        <input
-          matInput
-          placeholder="Previous Employer"
-          name="previousEmployer"
-          required
-        />
-      </mat-form-field> -->
-
-      <!--Login Information-->
-      <!-- <mat-form-field class="full-width">
-        <mat-label>Username</mat-label>
-        <input matInput placeholder="userName" name="eCountry" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width">
-        <mat-label>Password</mat-label>
-        <input
-          matInput
-          placeholder="password"
-          name="password"
-          type="password"
-          required
-        />
-      </mat-form-field> -->
-
-      <mat-card-actions  class="registrationTable">
+      <!-- <mat-card-actions  class="registrationTable">
         <button mat-raised-button (click)="register()" color="primary">
           Register
         </button>
+      </mat-card-actions> -->
+      <mat-card-actions  class="registrationTable">
+        <button mat-raised-button (click)="contactInformation()" color="primary">
+          Contact Information
+        </button>
       </mat-card-actions>
+
     </form>
   </mat-card-content>
   </div>

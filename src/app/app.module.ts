@@ -19,6 +19,11 @@ import { CountryComponent } from './country/country.component';
 import { LeaveLedgerComponent } from './leave-ledger/leave-ledger.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ExpensesComponent } from './expenses/expenses.component';
+import { ContactInformationComponent } from './contact-information/contact-information.component';
+import { EmergencyContactInformationComponent } from './emergency-contact-information/emergency-contact-information.component';
+import { ProfessionalInformationComponent } from './professional-information/professional-information.component';
+import { SalaryInformationComponent } from './salary-information/salary-information.component';
  
 @NgModule({
   declarations: [
@@ -34,7 +39,12 @@ import { ProfileComponent } from './profile/profile.component';
     CountryComponent,
     LeaveLedgerComponent,
     AttendanceComponent,
-    ProfileComponent,  
+    ProfileComponent,
+    ExpensesComponent,
+    ContactInformationComponent,
+    EmergencyContactInformationComponent,
+    ProfessionalInformationComponent,
+    SalaryInformationComponent,  
   ],
   imports: [
     BrowserModule,

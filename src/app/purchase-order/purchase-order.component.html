@@ -232,6 +232,7 @@
           <table align="center">
             <thead>
               <th>S.No</th>
+              <th>Reference Number</th>
               <th>Description of Items</th>
               <th>Quantity</th>
               <th>Unit Price</th>
@@ -244,16 +245,57 @@
                 [formGroupName]="i">
                 <td>{{ i + 1 }}</td>
                 <td>
-                  <input matInput placeholder="Description of Items" name="descriptionOfItems" formControlName="descriptionOfItems" required />
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Reference Number</mat-label>
+                    <input 
+                      matInput
+                      placeholder="Reference Number"
+                      name="referenceNumber"
+                formControlName="referenceNumber" 
+                      required/>
+                  </mat-form-field>
                 </td>
                 <td>
-                  <input matInput type="number" placeholder="Quantity" name="quantity" formControlName="quantity" required />
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Description of Items</mat-label>
+                    <input
+                      matInput
+                      placeholder="Description of Items"
+                      name="descriptionOfItems"
+                formControlName="descriptionOfItems" 
+                      required/>
+                  </mat-form-field>                </td>
+                <td>
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Quantity</mat-label>
+                    <input type="number" 
+                      matInput
+                      placeholder="Quantity"
+                      name="quantity"
+                formControlName="quantity" 
+                      required/>
+                  </mat-form-field>                </td>
+                <td>
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Unit Price</mat-label>
+                    <input type="number" 
+                      matInput
+                      placeholder="Unit Price"
+                      name="unitPrice"
+                formControlName="unitPrice" 
+                      required/>
+                  </mat-form-field>
                 </td>
                 <td>
-                  <input matInput type="number" placeholder="Unit Price" name="unitPrice" formControlName="unitPrice" required />
-                </td>
-                <td>
-                  <input matInput type="number" placeholder="Total Cost INR" name="totalCostINR" formControlName="totalCostINR" required />
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Total Cost INR</mat-label>
+                    <input type="number" 
+                      matInput
+                      placeholder="Total Cost INR"
+                      name="totalCostINR"
+                formControlName="totalCostINR" 
+                      required/>
+                  </mat-form-field>
                 </td>
                 <td>
                   <mat-icon *ngIf="purchaseOrderRows.controls.length > 1" (click) = "deletePurchaseOrderRow(i)" class="delete-btn">delete_forever</mat-icon>
