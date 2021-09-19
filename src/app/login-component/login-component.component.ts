@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login-component',
   templateUrl: './login-component.component.html',
@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-  login(): void{}
+  login(): void{
+    this.router.navigate(['/leaveLedger']);
+  }
 
 }

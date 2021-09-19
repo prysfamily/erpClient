@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef,  OnDestroy } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators, FormArray } from '@angular/forms';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
+import { MediaMatcher,  } from '@angular/cdk/layout';
 
 
 @Component({
@@ -14,16 +15,28 @@ export class CountryComponent implements OnInit {
   removable = true;
   addOnBlur = true;
   public countryForm!: FormGroup;
-  constructor(public fb: FormBuilder) { }
+  mobileQuery!: MediaQueryList;
+  opened! :  boolean;
+  private _mobileQueryListener: () => void;
+  constructor(public fb: FormBuilder,changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+    this.mobileQuery = media.matchMedia('(max-width: 600px)');
+    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
+    this.mobileQuery.addListener(this._mobileQueryListener);
 
+  }
+  
   ngOnInit(): void {
-    this.reactiveForm()
+    this.reactiveForm();
+    this.opened= this.mobileQuery.matches ? false : true;
+  }
+   ngOnDestroy(): void {
+    this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
   /* Reactive form */
   reactiveForm() {
     this.countryForm = this.fb.group({
-      countryCode: ['QA', [Validators.required, Validators.minLength, Validators.maxLength]],
+      countryCode: ['', [Validators.required, Validators.minLength, Validators.maxLength]],
       countryDescription: ['', [Validators.required, Validators.minLength, Validators.maxLength]],
       nationality: ['', [Validators.required,Validators.minLength, Validators.maxLength]],
       
