@@ -5,24 +5,24 @@
     <mat-card-content>
       <form class="my-form">
 
-            <mat-form-field class="full-width">
+            <mat-form-field class="full-width" appearance="outline">
                  <mat-label>Employee Id</mat-label>
                  <input  matInput  placeholder="Employee Id"  name="employeeId"  required>
               </mat-form-field>
 
-              <mat-form-field class="full-width">
+              <mat-form-field class="full-width" appearance="outline">
                 <mat-label>Employee Name</mat-label>
                 <input  matInput  placeholder="Employee Name"  name="employeeId"  required>
              </mat-form-field>
  
-              <mat-form-field>
+              <mat-form-field appearance="outline">
                 <mat-label>Date & Time</mat-label>
                 <input matInput [matDatepicker]="picker" placeholder="Current Date & Time" />
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>
         
-              <mat-card-actions>
+              <mat-card-actions class="attendanceTable">
                 <button mat-raised-button (click)="attendanceCheckIn()" color="primary">
                   Checkin
                 </button>

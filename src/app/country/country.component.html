@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <mat-drawer-container class="example-container"  >
     <mat-drawer mode="side" [(opened)]="!mobileQuery.matches!" >
       <button mat-button class="menu-button">
@@ -14,6 +15,30 @@
       </button>
 
       <mat-divider></mat-divider>
+=======
+<mat-toolbar>
+    <span>Primas Country Registration</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+    <mat-card-content>
+      <form class="country-form" [formGroup]="countryForm" (ngSubmit)="countryRegistration()" novalidate>
+             <mat-form-field class="full-width" appearance="outline">
+                 <mat-label>Country Code</mat-label>
+                 <input  matInput  placeholder="Country Code"  name="countryCode"  required   minlength="2" maxlength="2"  formControlName="countryCode" pattern="[a-zA-Z ]*">
+                 <mat-error >
+                  {{errorMessage("countryCode","Only Country Codes")}}
+                </mat-error>
+                </mat-form-field>
+ 
+              <mat-form-field class="full-width" appearance="outline">
+                 <mat-label>Country Description</mat-label>
+                 <input  matInput  placeholder="Country Description"  name="countryDescription" required minlength="4" maxlength="25"  formControlName="countryDescription" pattern="[a-zA-Z ]*">
+                 <mat-error >
+                  {{errorMessage("countryDescription","Only Country Name")}}
+                </mat-error>
+                </mat-form-field>
+ 
+>>>>>>> 9d222d854ead4e6e3ac758370c5f08ee2afb0a34
 
       <button mat-button class="menu-button">
           <mat-icon>help</mat-icon>
@@ -67,4 +92,15 @@
   </mat-drawer-container>
  
 
+<<<<<<< HEAD
+=======
+             <mat-card-actions class="countryTable">
+                <button mat-raised-button  type="submit"  color="primary">
+                  Country Registration
+                </button>
+              </mat-card-actions>
+          </form>
+       </mat-card-content>
+    </mat-card>
+>>>>>>> 9d222d854ead4e6e3ac758370c5f08ee2afb0a34
  

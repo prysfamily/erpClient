@@ -4,18 +4,17 @@
   <mat-card class="my-card">
     <mat-card-content>
       <form class="my-form">
- <!--Department Information-->
-             <mat-form-field class="full-width">
+             <mat-form-field class="full-width" appearance="outline">
                  <mat-label>Department Name</mat-label>
                  <input  matInput  placeholder="Department Name"  name="departmentName"  required>
               </mat-form-field>
  
-              <mat-form-field class="full-width">
+              <mat-form-field class="full-width" appearance="outline">
                  <mat-label>Department Head</mat-label>
                  <input  matInput  placeholder="Department Head"  name="departmentHead" required>
               </mat-form-field>
  
-              <mat-card-actions>
+              <mat-card-actions  class="departmentTable">
                 <button mat-raised-button (click)="departmentRegistration()" color="primary">
                   Department Registration
                 </button>

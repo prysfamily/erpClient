@@ -46,7 +46,7 @@ export class CountryComponent implements OnInit {
   public  errorMessage(control: string, msg : string): string {
     const form: FormControl = (this.countryForm.controls[control] as FormControl);
     return form.hasError('required') ?
-      'Required error message' :
+      'This is mandatory' :
       form.hasError('maxlength') ?
       'Max length error' : 
       form.hasError('minlength') ?
