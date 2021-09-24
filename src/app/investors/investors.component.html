@@ -9,12 +9,31 @@
                  <mat-label>Investor Name</mat-label>
                  <input  matInput  placeholder="Investor Name"  name="investorName"  required>
               </mat-form-field>
- 
-              <mat-form-field class="full-width" appearance="outline">
-                 <mat-label>Investor Location</mat-label>
-                 <input  matInput  placeholder="Investor Location"  name="investorLocation" required>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Country</mat-label>
+                <mat-select>
+                  <mat-option value="India">India</mat-option>
+                </mat-select>
               </mat-form-field>
- 
+      
+              
+              <mat-form-field appearance="outline">
+                <mat-label>State</mat-label>
+                <mat-select>
+                  <mat-option value="Kerala">Kerala</mat-option>
+                  <mat-option value="Tamilnadu">Tamilnadu</mat-option>
+                </mat-select>
+              </mat-form-field>
+      
+              <mat-form-field appearance="outline">
+                <mat-label>City</mat-label>
+                <mat-select>
+                  <mat-option value="Chennai">Chennai</mat-option>
+                  <mat-option value="Thiruchirappalli">Thiruchirappalli</mat-option>
+                </mat-select>
+              </mat-form-field>
+
          <mat-form-field class="full-width" appearance="outline">
             <mat-label>Building Number</mat-label>
             <input matInput placeholder="Building Number" name="buildingNumber" required />
@@ -26,23 +45,8 @@
       </mat-form-field>
 
       <mat-form-field class="full-width" appearance="outline">
-        <mat-label>City</mat-label>
-        <input matInput placeholder="City" name="city" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width" appearance="outline">
-        <mat-label>State</mat-label>
-        <input matInput placeholder="State" name="state" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width" appearance="outline">
         <mat-label>Pin Code</mat-label>
         <input matInput placeholder="Pin Code" name="pinCode" required />
-      </mat-form-field>
-
-      <mat-form-field class="full-width" appearance="outline">
-        <mat-label>Country</mat-label>
-        <input matInput placeholder="Country" name="country" required />
       </mat-form-field>
 
       <mat-form-field class="full-width" appearance="outline">
@@ -61,7 +65,22 @@
         <input matInput placeholder="Email Id" name="emailId" required />
       </mat-form-field>
 
-              <mat-card-actions>
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Current No. of Shares</mat-label>
+        <input matInput placeholder="Current No. of Shares" name="currentNoOfShares" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Current No. of Shares</mat-label>
+        <input matInput placeholder="Current No. of Shares" name="currentNoOfShares" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Total Amount Invested</mat-label>
+        <input matInput placeholder="Total Amount Invested" name="totalAmountInvested" required />
+      </mat-form-field>
+
+              <mat-card-actions  class="clientsTable">
                 <button mat-raised-button (click)="investorsRegistration()" color="primary">
                   Investor Registration
                 </button>

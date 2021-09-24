@@ -1,0 +1,43 @@
+<mat-toolbar color="primary">
+    <!-- <button mat-icon-button id="menu" (click)="navService.openNav()">
+        <mat-icon>menu</mat-icon>
+      </button> -->
+      
+    <mat-toolbar-row>
+      <!--  <span>HOME</span> -->
+       <!-- <span><a mat-button style="color: azure;" href="/">Home</a></span> -->
+       <span class="spacer"></span>
+       
+       <a *ngIf="loginStatus" mat-button routerLink="/register">Register</a>
+       <!-- <a *ngIf="loginStatus" mat-button routerLink="/login">Login</a> -->
+      
+       <a *ngIf="loginStatus"  mat-button routerLink="/department">Department</a>
+       
+       <a *ngIf="loginStatus" mat-button routerLink="/designation">Designation</a>
+       <a *ngIf="loginStatus" mat-button routerLink="/clients">Clients</a>
+       <a *ngIf="loginStatus" mat-button routerLink="/investors">Investors</a>
+       <a *ngIf="loginStatus" mat-button routerLink="/purchaseOrder">Purchase Order</a>
+       <a *ngIf="loginStatus" mat-button routerLink="/country">Country Maintenance</a>
+       <a *ngIf="loginStatus" mat-button routerLink="/leaveLedger">Leave Ledger</a>
+       <a *ngIf="loginStatus" mat-button routerLink="/attendance">Attendance</a>
+       <!-- <a *ngIf="loginStatus" mat-button routerLink="/expenses">Expenses</a>
+       <a *ngIf="loginStatus" mat-button routerLink="/employee">Employee</a> -->
+       <a *ngIf="loginStatus" mat-button routerLink="/academicDetails">Academic Details</a>
+       <!-- <a *ngIf="loginStatus" mat-button routerLink="/profile">Profile</a> -->
+    </mat-toolbar-row>
+
+    <!-- <mat-sidenav-container>
+        <mat-sidenav #appDrawer mode="over" opened="false">
+          <mat-nav-list>
+            <app-menu-list-item *ngFor="let item of navItems" [item]="item"></app-menu-list-item>
+          </mat-nav-list>
+        </mat-sidenav>
+        <app-top-nav fxHide.xs></app-top-nav>
+        <router-outlet></router-outlet>
+        <div fxFlex></div>
+         
+      </mat-sidenav-container> -->
+  </mat-toolbar>
+
+  <!-- <app-top-nav class="fixed-topnav" fxHide.gt-xs></app-top-nav> -->
+

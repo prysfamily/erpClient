@@ -24,7 +24,11 @@ import { ContactInformationComponent } from './contact-information/contact-infor
 import { EmergencyContactInformationComponent } from './emergency-contact-information/emergency-contact-information.component';
 import { ProfessionalInformationComponent } from './professional-information/professional-information.component';
 import { SalaryInformationComponent } from './salary-information/salary-information.component';
- 
+import { EmployeeToolBarComponent } from './employee-tool-bar/employee-tool-bar.component';
+import { MenuListItemComponent } from './menu-list-item/menu-list-item.component';
+import { NavService } from './nav.service';
+import { EmployeeComponent } from './employee/employee.component';
+import { AcademicDetailsComponent } from './academic-details/academic-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +48,11 @@ import { SalaryInformationComponent } from './salary-information/salary-informat
     ContactInformationComponent,
     EmergencyContactInformationComponent,
     ProfessionalInformationComponent,
-    SalaryInformationComponent,  
+    SalaryInformationComponent,
+    EmployeeToolBarComponent,
+    MenuListItemComponent,
+    EmployeeComponent,
+    AcademicDetailsComponent,  
   ],
   imports: [
     BrowserModule,
@@ -55,7 +63,7 @@ import { SalaryInformationComponent } from './salary-information/salary-informat
     AngularMaterialModule
   ],
   providers: [ 
- 
+    NavService
   ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

@@ -6,6 +6,39 @@
   <mat-card-content  class="matcnt">
     <form class="my-form">
 
+      <mat-form-field appearance="outline">
+        <mat-label>Employment Type</mat-label>
+        <mat-select>
+          <mat-option value="Employee">Employee</mat-option>
+          <mat-option value="Trainee">Trainee</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Employment Category</mat-label>
+        <mat-select>
+          <mat-option value="Technical">Technical</mat-option>
+          <mat-option value="Non Technical">Non Technical</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>Department</mat-label>
+        <mat-select>
+          <mat-option value="Production">Production</mat-option>
+          <mat-option value="Quality">Quality</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Designation</mat-label>
+        <mat-select>
+          <mat-option value="Production Manager">Production Manager</mat-option>
+          <mat-option value="Quality Analyzer">Quality Analyzer</mat-option>
+        </mat-select>
+      </mat-form-field>
+
       <mat-form-field class="full-width" appearance="outline">
         <mat-label>Employee Id</mat-label>
         <input matInput placeholder="Employee Id" name="employeeId" required />
@@ -21,12 +54,14 @@
         <input matInput placeholder="Last Name" name="lastName" required />
       </mat-form-field>
 
-      <mat-radio-group aria-label="Sex">
-        <mat-label>Gender : </mat-label>
-        <mat-radio-button value="1">Male</mat-radio-button>
-        <mat-radio-button value="2">Female</mat-radio-button>
-        <mat-radio-button value="2">Others</mat-radio-button>
-      </mat-radio-group>
+      <mat-form-field appearance="outline">
+        <mat-label>Gender</mat-label>
+        <mat-select>
+          <mat-option value="Male">Male</mat-option>
+          <mat-option value="Female">Female</mat-option>
+          <mat-option value="Others">Others</mat-option>
+        </mat-select>
+      </mat-form-field>
 
       <mat-form-field  appearance="outline">
         <mat-label>Date of Birth</mat-label>
@@ -41,6 +76,16 @@
           matInput
           placeholder="Aadhar Number"
           name="aadharNumber"
+          required
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>PAN Number</mat-label>
+        <input
+          matInput
+          placeholder="PAN Number"
+          name="panNumber"
           required
         />
       </mat-form-field>
@@ -77,6 +122,7 @@
           required
         />
       </mat-form-field>
+
       <mat-form-field appearance="outline">
         <mat-label>Passport Expiry Date</mat-label>
         <input matInput [matDatepicker]="picker2" placeholder="Select Passport Date" />
@@ -87,16 +133,21 @@
         <mat-datepicker #picker2></mat-datepicker>
       </mat-form-field>
 
-      <mat-form-field class="full-width" appearance="outline">
+      <mat-form-field appearance="outline">
         <mat-label>Nationality</mat-label>
-        <input matInput placeholder="Nationality" name="nationality" required />
+        <mat-select>
+          <mat-option value="Indian">Indian</mat-option>
+        </mat-select>
       </mat-form-field>
 
-      <mat-radio-group aria-label="MaritalStatus">
-        <mat-label>Marital Status : </mat-label>
-        <mat-radio-button value="1">Single</mat-radio-button>
-        <mat-radio-button value="2">Married</mat-radio-button>
-      </mat-radio-group>
+      <mat-form-field appearance="outline">
+        <mat-label>Marital Status</mat-label>
+        <mat-select>
+          <mat-option value="Single">Single</mat-option>
+          <mat-option value="Married">Married</mat-option>
+          <mat-option value="Divorcy">Divorcy</mat-option>
+        </mat-select>
+      </mat-form-field>
 
       <mat-form-field class="full-width" appearance="outline">
         <mat-label>Disability Description</mat-label>
@@ -104,16 +155,6 @@
           matInput
           placeholder="Disability Description"
           name="disabilityDesciption"
-          required
-        />
-      </mat-form-field>
-
-      <mat-form-field class="full-width" appearance="outline">
-        <mat-label>Qualificaation</mat-label>
-        <input
-          matInput
-          placeholder="Qualification"
-          name="qualification"
           required
         />
       </mat-form-field>
@@ -138,12 +179,75 @@
         />
       </mat-form-field>
       
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Employee Spouse/Relation</mat-label>
+        <input matInput placeholder="Employee Spouse/Relation" name="employeeSpouseRelation" required />
+      </mat-form-field>
 
-      <!-- <mat-card-actions  class="registrationTable">
-        <button mat-raised-button (click)="register()" color="primary">
-          Register
-        </button>
-      </mat-card-actions> -->
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Reference Details</mat-label>
+        <input matInput placeholder="Reference Details" name="referenceDetails" required />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>ESI Insurance Number</mat-label>
+        <input matInput placeholder="ESI Insurance Number" name="ESI Insurance Number" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Hire Date</mat-label>
+        <input matInput [matDatepicker]="picker3" placeholder="Select Hire Date" />
+        <mat-datepicker-toggle
+          matSuffix
+          [for]="picker3"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker3></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Training Period</mat-label>
+        <mat-select>
+          <mat-option value="Zero Days">Zero Days</mat-option>
+          <mat-option value="3 Months">3 Months</mat-option>
+          <mat-option value="6 Months">6 Months</mat-option>
+          <mat-option value="9 Months">9 Months</mat-option>
+          <mat-option value="1 Year">1 Year</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>ESI Insurance Number</mat-label>
+        <input matInput placeholder="ESI Insurance Number" name="ESI Insurance Number" required />
+      </mat-form-field>
+
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Photo Upload</mat-label>
+        <input matInput placeholder="Photo Upload" name="photoUpload" required />
+      </mat-form-field>
+
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Signaature/Thumb Impression</mat-label>
+        <input matInput placeholder="Signaature/Thumb Impression" name="signaatureOrThumbImpression" required />
+      </mat-form-field>
+
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Medical Report</mat-label>
+        <input matInput placeholder="Medical Report" name="medicalReport" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Shift Details</mat-label>
+        <mat-select>
+          <mat-option value="First Shift">First Shift</mat-option>
+          <mat-option value="Second Shift">Second Shift</mat-option>
+          <mat-option value="Third Shift">Third Shift</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
       <mat-card-actions  class="registrationTable">
         <button mat-raised-button (click)="contactInformation()" color="primary">
           Contact Information

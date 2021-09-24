@@ -5,17 +5,28 @@
     <div>
     <mat-card-content  class="matcnt">
       <form class="my-form">
-  
-        <mat-form-field class="full-width" appearance="outline">
-          <mat-label>Employee Id</mat-label>
-          <input matInput placeholder="Employee Id" name="employeeId" required />
+
+        <mat-form-field class="full-width"  appearance="outline">
+          <mat-label>Name</mat-label>
+          <input
+            matInput
+            placeholder="Name"
+            name="name"
+            required
+          />
         </mat-form-field>
 
-        <mat-form-field class="full-width" appearance="outline">
-          <mat-label>Employee Name</mat-label>
-          <input matInput placeholder="Employee Name" name="employeeName" required />
+        <mat-form-field appearance="outline">
+          <mat-label>Relationship</mat-label>
+          <mat-select>
+            <mat-option value="Brother">Brother</mat-option>
+            <mat-option value="Father">Father</mat-option>
+            <mat-option value="Mother">Mother</mat-option>
+            <mat-option value="Wife">Wife</mat-option>
+          </mat-select>
         </mat-form-field>
-  
+
+
         <mat-form-field class="full-width"  appearance="outline">
           <mat-label>Building Number</mat-label>
           <input
@@ -31,25 +42,50 @@
           <input matInput placeholder="Street Name" name="eStreetName" required />
         </mat-form-field>
   
-        <mat-form-field class="full-width" appearance="outline">
-          <mat-label>City</mat-label>
-          <input matInput placeholder="City" name="eCity" required />
+        <mat-form-field appearance="outline">
+          <mat-label>Country</mat-label>
+          <mat-select>
+            <mat-option value="India">India</mat-option>
+          </mat-select>
         </mat-form-field>
-  
-        <mat-form-field class="full-width" appearance="outline">
+
+        
+        <mat-form-field appearance="outline">
           <mat-label>State</mat-label>
-          <input matInput placeholder="State" name="eState" required />
+          <mat-select>
+            <mat-option value="Kerala">Kerala</mat-option>
+            <mat-option value="Tamilnadu">Tamilnadu</mat-option>
+          </mat-select>
         </mat-form-field>
-  
+
+        <mat-form-field appearance="outline">
+          <mat-label>City</mat-label>
+          <mat-select>
+            <mat-option value="Chennai">Chennai</mat-option>
+            <mat-option value="Thiruchirappalli">Thiruchirappalli</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        
         <mat-form-field class="full-width" appearance="outline">
           <mat-label>Pin Code</mat-label>
           <input matInput placeholder="Pin Code" name="ePinCode" required />
         </mat-form-field>
   
         <mat-form-field class="full-width" appearance="outline">
-          <mat-label>Country</mat-label>
-          <input matInput placeholder="Country" name="eCountry" required />
+          <mat-label>Mobile Number</mat-label>
+          <input
+            matInput
+            placeholder="Mobile Number"
+            name="mobileNumber"
+            required
+          />
         </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Email Id</mat-label>
+          <input matInput placeholder="Email Id" name="emailId" required />
+        </mat-form-field>
+  
   
         <mat-card-actions  class="registrationTable">
           <button mat-raised-button (click)="professionalInformation()" color="primary">

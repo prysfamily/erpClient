@@ -1,0 +1,108 @@
+<mat-toolbar>
+    <span>Primas Employee Academic Details</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+    <div>
+      <mat-card-content class="matcnt">
+        <form class="my-form">
+            
+          <form [formGroup]="academicDetailsForm" class="academicDetailsTable">
+            <table align="left" border="0">
+              <thead>
+                <th>S.No</th>
+                <th>Course</th>
+                <th>Institution</th>
+                <th>University/Board</th>
+                <th>Year of Passing</th>
+                <th>Percentage of Marks</th>
+                <th>Remove</th>
+              </thead>
+              <tbody formArrayName="academicDetailsRows">
+                <tr
+                  *ngFor="let itemrow of academicDetailsRows.controls; let i=index;let l=last"
+                  [formGroupName]="i">
+                  <td>{{ i + 1 }}</td>
+                  <td>
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Course</mat-label>
+                      <input 
+                        matInput
+                        placeholder="Course"
+                        name="course"
+                  formControlName="course" 
+                        required/>
+                    </mat-form-field>
+                  </td>
+
+                  <td>
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Institution</mat-label>
+                      <input
+                        matInput
+                        placeholder="Institution"
+                        name="institution"
+                  formControlName="institution" 
+                        required/>
+                    </mat-form-field>                
+                </td>
+                <td>
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>University/Board</mat-label>
+                      <input 
+                        matInput
+                        placeholder="University/Board"
+                        name="universityOrBoard"
+                  formControlName="universityOrBoard" 
+                        required/>
+                    </mat-form-field>               
+                 </td>
+
+                 <td>
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Year of Passing</mat-label>
+                      <input  
+                        matInput
+                        placeholder="Year of Passing"
+                        name="yearOfPassing"
+                  formControlName="yearOfPassing" 
+                        required/>
+                    </mat-form-field>
+                  </td>
+
+                  <td>
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Percentage Of Marks</mat-label>
+                      <input
+                        matInput
+                        placeholder="Percentage of Marks"
+                        name="percentageOfMarks"
+                  formControlName="percentageOfMarks" 
+                        required/>
+                    </mat-form-field>
+                  </td>
+
+                  
+                  <td>
+                    <mat-icon *ngIf="academicDetailsRows.controls.length > 1" (click) = "deleteAcademicDetailsRow(i)" class="delete-btn">delete_forever</mat-icon>
+                  </td>
+
+
+                </tr>
+              </tbody>
+            </table>
+          </form>
+          <div class="addAcademicDetails">
+          <button mat-mini-fab type="button" (click)="addAcademicDetailsRow()" class="btn btn-primary">
+            <mat-icon class="add-course-btn">add</mat-icon></button>
+        </div>
+        
+          <mat-card-actions class="academicDetailsTable">
+            <button mat-raised-button (click)="academicDetails()" color="primary" >
+              Academic Details
+            </button>
+          </mat-card-actions>
+        </form>
+      </mat-card-content>
+    </div>
+  </mat-card>
+  
