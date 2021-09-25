@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+<mat-drawer-container class="example-container"  >
+    <mat-drawer mode="side" [(opened)]="!mobileQuery.matches!" >
+      <button mat-button class="menu-button">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+      </button>
+      <button mat-button class="menu-button">
+          <mat-icon>person</mat-icon>
+          <span>Profile</span>
+      </button>
+      <button mat-button class="menu-button">
+          <mat-icon>info</mat-icon>
+          <span>About</span>
+      </button>
+
+      <mat-divider></mat-divider>
+=======
 <mat-toolbar>
     <span>Primas Country Registration</span>
   </mat-toolbar>
@@ -20,15 +38,62 @@
                 </mat-error>
                 </mat-form-field>
  
+>>>>>>> 9d222d854ead4e6e3ac758370c5f08ee2afb0a34
 
-              <mat-form-field class="full-width" appearance="outline">
-                <mat-label>Nationality</mat-label>
-                <input  matInput  placeholder="Nationality"  name="nationality" required minlength="4" maxlength="25"  formControlName="nationality" pattern="[a-zA-Z ]*">
-                <mat-error >
-                  {{errorMessage("nationality","Only Nationality")}}
-                </mat-error>
-              </mat-form-field>
+      <button mat-button class="menu-button">
+          <mat-icon>help</mat-icon>
+          <span>Help</span>
+      </button>
+    </mat-drawer>
+    <mat-drawer-content>
+      <mat-toolbar>
+        <span>  Primas Country Registration</span>
+      </mat-toolbar>
+      <mat-card class="content">
+        <mat-card-content>
+          
+          <form class="country-form" [formGroup]="countryForm" (ngSubmit)="countryRegistration()" novalidate>
+     
+                 <mat-form-field class="full-width" appearance="outline">
+                     <mat-label>Country Code</mat-label>
+                     <input  matInput  placeholder="Country Code"  name="countryCode"  required   minlength="2" maxlength="2"  formControlName="countryCode" pattern="[a-zA-Z ]*">
+                     <mat-error >
+                      {{errorMessage("countryCode","Only Country Codes")}}
+                    </mat-error>
+                    </mat-form-field>
+     
+                  <mat-form-field class="full-width" appearance="outline">
+                     <mat-label>Country Description</mat-label>
+                     <input  matInput  placeholder="Country Description"  name="countryDescription" required minlength="4" maxlength="25"  formControlName="countryDescription" pattern="[a-zA-Z ]*">
+                     <mat-error >
+                      {{errorMessage("countryDescription","Only Country Name")}}
+                    </mat-error>
+                    </mat-form-field>
+     
+    
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Nationality</mat-label>
+                    <input  matInput  placeholder="Nationality"  name="nationality" required minlength="4" maxlength="25"  formControlName="nationality" pattern="[a-zA-Z ]*">
+                    <mat-error >
+                      {{errorMessage("nationality","Only Nationality")}}
+                    </mat-error>
+                  </mat-form-field>
+    
+                 <mat-card-actions>
+                    <button mat-raised-button  type="submit"  color="primary">
+                      Country Registration
+                    </button>
+                  </mat-card-actions>
+              </form>
+           </mat-card-content>
+        </mat-card>
 
+    </mat-drawer-content>
+  </mat-drawer-container>
+ 
+
+<<<<<<< HEAD
+=======
              <mat-card-actions class="countryTable">
                 <button mat-raised-button  type="submit"  color="primary">
                   Country Registration
@@ -37,4 +102,5 @@
           </form>
        </mat-card-content>
     </mat-card>
+>>>>>>> 9d222d854ead4e6e3ac758370c5f08ee2afb0a34
  

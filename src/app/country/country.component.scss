@@ -13,6 +13,41 @@
     margin-left: 16px;
 } 
 
+<<<<<<< HEAD
+mat-toolbar > span{
+ margin-left: 20px;
+}
+
+mat-drawer {
+    margin: 16px;
+    width: 200px;
+    border-right: none;
+    background: #002b5c;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    visibility: visible;
+}
+
+.content {
+    height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    color: lightgray;
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+}
+=======
 
 .my-card{
   display:flex;
@@ -25,3 +60,4 @@
   text-align: center;
   
 }
+>>>>>>> 9d222d854ead4e6e3ac758370c5f08ee2afb0a34
