@@ -14,23 +14,18 @@ export class CountryComponent implements OnInit {
   selectable = true;
   removable = true;
   addOnBlur = true;
-  public countryForm!: FormGroup;
-  mobileQuery!: MediaQueryList;
-  opened! :  boolean;
-  private _mobileQueryListener: () => void;
-  constructor(public fb: FormBuilder,changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
-    this.mobileQuery = media.matchMedia('(max-width: 600px)');
-    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
-    this.mobileQuery.addListener(this._mobileQueryListener);
+  public countryForm!: FormGroup; 
+  constructor(public fb: FormBuilder ) {
+    
 
   }
   
   ngOnInit(): void {
     this.reactiveForm();
-    this.opened= this.mobileQuery.matches ? false : true;
+     
   }
    ngOnDestroy(): void {
-    this.mobileQuery.removeListener(this._mobileQueryListener);
+    
   }
 
   /* Reactive form */

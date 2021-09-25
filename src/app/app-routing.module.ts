@@ -18,6 +18,7 @@ import { ProfessionalInformationComponent } from './professional-information/pro
 import { SalaryInformationComponent } from './salary-information/salary-information.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { AcademicDetailsComponent } from './academic-details/academic-details.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 const routes: Routes = [ 
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -39,6 +40,7 @@ const routes: Routes = [
       { path: 'salaryInformation', component: SalaryInformationComponent},
       { path: 'employee', component: EmployeeComponent},
       { path: 'academicDetails', component: AcademicDetailsComponent},
+      { path: 'myAccount', component: MyAccountComponent},
 ];
 
 @NgModule({

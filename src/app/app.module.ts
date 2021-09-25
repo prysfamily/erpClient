@@ -31,6 +31,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { AcademicDetailsComponent } from './academic-details/academic-details.component';
 import { DataService  } from './common-service.service';
 import { FooterComponent } from './footer/footer.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +56,8 @@ import { FooterComponent } from './footer/footer.component';
     MenuListItemComponent,
     EmployeeComponent,
     AcademicDetailsComponent,
-    FooterComponent,  
+    FooterComponent,
+    MyAccountComponent,  
   ],
   imports: [
     BrowserModule,

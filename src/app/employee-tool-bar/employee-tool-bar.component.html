@@ -18,6 +18,7 @@
        <a *ngIf="((isLoggedIn && isAdminIn)| async)" mat-button routerLink="/investors">Investors</a>
        <a *ngIf="((isLoggedIn && isAdminIn)| async)" mat-button routerLink="/purchaseOrder">Purchase Order</a>
        <a *ngIf="((isLoggedIn && isAdminIn)| async)" mat-button routerLink="/country">Country Maintenance</a>
+       <a *ngIf="((isLoggedIn && isStaffIn) | async)" mat-button routerLink="/myAccount">My Account</a>
        <a *ngIf="((isLoggedIn && isStaffIn) | async)" mat-button routerLink="/leaveLedger">Leave Ledger</a>
        <a *ngIf="((isLoggedIn && isStaffIn) | async)" mat-button routerLink="/attendance">Attendance</a>
        <!-- <a *ngIf="loginStatus" mat-button routerLink="/expenses">Expenses</a>

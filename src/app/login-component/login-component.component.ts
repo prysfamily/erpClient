@@ -61,6 +61,6 @@ export class LoginComponentComponent implements OnInit {
     console.log(role);
     this.csService.login(role);
     localStorage.setItem('token', 'JWT');
-    this.router.navigate(['/profile']);
+    this.router.navigate(['/myAccount']);
   }
 }

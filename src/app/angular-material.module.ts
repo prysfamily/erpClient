@@ -71,7 +71,7 @@ const materialModules = [
   MatTooltipModule,
   MatNativeDateModule,
   MatNativeDateModule,
-  FlexLayoutModule
+  FlexLayoutModule,
 ];
 
 @NgModule({

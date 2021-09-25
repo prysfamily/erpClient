@@ -3,11 +3,11 @@ import { NavItem } from '../model/nav-items';
 import { NavService } from '../nav.service';
 
 @Component({
-  selector: 'app-attendance',
-  templateUrl: './attendance.component.html',
-  styleUrls: ['./attendance.component.scss']
+  selector: 'app-my-account',
+  templateUrl: './my-account.component.html',
+  styleUrls: ['./my-account.component.scss']
 })
-export class AttendanceComponent implements OnInit {
+export class MyAccountComponent implements OnInit {
 
   constructor(public navService : NavService) { }
  
@@ -15,10 +15,7 @@ export class AttendanceComponent implements OnInit {
   appDrawer!: ElementRef;
   ngOnInit(): void {
     this.navService.appDrawer = this.appDrawer;
-   
   }
-  attendanceCheckIn(): void{}
-  attendanceCheckOut(): void{}
   navItems: NavItem[] = [
     {
       displayName: 'Contact Information',
@@ -43,6 +40,5 @@ export class AttendanceComponent implements OnInit {
   ngAfterViewInit() {
     this.navService.appDrawer = this.appDrawer;
   }
- 
-   
+
 }
