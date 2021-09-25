@@ -29,6 +29,8 @@ import { MenuListItemComponent } from './menu-list-item/menu-list-item.component
 import { NavService } from './nav.service';
 import { EmployeeComponent } from './employee/employee.component';
 import { AcademicDetailsComponent } from './academic-details/academic-details.component';
+import { DataService  } from './common-service.service';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +54,8 @@ import { AcademicDetailsComponent } from './academic-details/academic-details.co
     EmployeeToolBarComponent,
     MenuListItemComponent,
     EmployeeComponent,
-    AcademicDetailsComponent,  
+    AcademicDetailsComponent,
+    FooterComponent,  
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,8 @@ import { AcademicDetailsComponent } from './academic-details/academic-details.co
     AngularMaterialModule
   ],
   providers: [ 
-    NavService
+    NavService,
+    DataService
   ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

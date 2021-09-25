@@ -2,6 +2,8 @@ import { NavService } from './../nav.service';
 import { Component, ElementRef, OnInit, ViewChild,ViewEncapsulation, AfterViewInit } from '@angular/core';
 import {NavItem} from './../model/nav-items';
 import { MatNavList } from '@angular/material/list';
+import { DataService } from "../common-service.service";
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-employee-tool-bar',
@@ -10,7 +12,16 @@ import { MatNavList } from '@angular/material/list';
 })
 export class EmployeeToolBarComponent implements OnInit {
 
-  constructor(public navService : NavService) { }
+  isLoggedIn!: Observable<boolean>;
+  isAdminIn!: Observable<boolean>;
+  isStaffIn!: Observable<boolean>;
+
+  constructor(public navService : NavService, public ds: DataService) { 
+    this.isLoggedIn! = ds.isLoggedIn();
+    this.isAdminIn! = ds.isAdminIn();
+    this.isStaffIn! = ds.isStaffIn();
+    
+  }
   loginStatus = true;
   @ViewChild('appDrawer')
   appDrawer!: ElementRef;

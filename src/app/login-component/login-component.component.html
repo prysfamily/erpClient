@@ -8,7 +8,7 @@
 <!--Login Information-->
             <mat-form-field class="full-width" appearance="outline">
                 <mat-label>Username</mat-label>
-                <input  matInput  value="admin" readonly  placeholder="UserName"  name="userName"  required minlength="5" maxlength="5"  formControlName="userName" pattern="[a-zA-Z ]*">
+                <input  matInput  value="admin"   placeholder="UserName"  name="userName"  required minlength="5" maxlength="5"  formControlName="userName" pattern="[a-zA-Z ]*">
                 <mat-error >
                   {{errorMessage("userName","")}}
                 </mat-error>
@@ -16,7 +16,7 @@
 
              <mat-form-field class="full-width" appearance="outline">
                 <mat-label>Password</mat-label>
-                <input  matInput value="admin" readonly placeholder="Password"  name="password" type="password" required minlength="5" maxlength="5"  formControlName="password" pattern="[a-zA-Z ]*">
+                <input  matInput value="admin" placeholder="Password"  name="password" type="password" required minlength="5" maxlength="5"  formControlName="password" pattern="[a-zA-Z ]*">
                 <mat-error >
                   {{errorMessage("password","")}}
                 </mat-error>
